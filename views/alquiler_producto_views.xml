@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_form_alquiler" model="ir.ui.view">
+        <field name="name">alquiler.producto.form</field>
+        <field name="model">alquiler.producto</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="customer_id"/>
+                        <field name="product_id"/>
+                        <field name="initial_date"/>
+                        <field name="final_date"/>
+                        <field name="status"/>
+                        <field name="comments"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_alquiler" model="ir.actions.act_window">
+        <field name="name">Alquileres</field>
+        <field name="res_model">alquiler.producto</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_alquiler" 
+              name="Alquileres" 
+              action="action_alquiler"/>
+</odoo>
