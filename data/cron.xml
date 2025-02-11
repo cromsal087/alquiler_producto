@@ -11,3 +11,6 @@
         <field name="active" eval="True"/>
     </record>
 </odoo>
+
+<!-- Es un trabajo programado que se ejecuta automáticamente cada cierto tiempo
+Aquí, revisa diariamente si hay alquileres vencidos para cambiar su estado -->
